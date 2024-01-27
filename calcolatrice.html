@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mini Calcolatrice in Javascript</title>
+</head>
+<style>
+    body{background:rgb(239, 239, 239);}
+    body>:first-child>:last-child>:only-child{box-shadow:4px 4px 9px rgb(151, 151, 151)}
+    .container>:last-child>:only-child>:nth-child(-n+3)>:only-child>:last-child{background-color:rgb(228, 228, 228);}
+</style>
+<body>
+    <div class="container mt-5 mb-5 text-center">
+        <h1>Calcolatrice</h1>
+        <div class="row mt-3 justify-content-center">
+            <div class="d-flex  flex-column border w-25 p-3 align-items-center" style="min-width:300px;min-height:420px;">
+               <div class="col-sm-8 mb-sm-3">
+                    <div class="input">
+                        <label class="form-label" for="first number">Primo Numero*</label>
+                        <input type="number" class="form-control mb-3" id="firstNumber">
+                    </div>
+                </div>
+                <div class="col-sm-8 mb-sm-3">
+                    <div class="input">
+                        <label class="form-label" for="last number">Secondo Numero*</label>
+                        <input type="number" class="form-control mb-3" id="lastNumber">
+                    </div>
+                </div>
+                <div class="col-sm-8 mb-sm-3">
+                    <select class="form-select" name="operazione" id="operazione">
+                        <option value="0" selected>Scegli operazione...</option>
+                        <option value="addizione">Addizione +</option>
+                        <option value="sottrazione">Sottrazione -</option>
+                        <option value="moltiplicazione">Moltiplicazione x</option>
+                        <option value="divisione">Divisione /</option>
+                    </select>
+                    <button type="button" class="btn btn-md btn-danger mt-4 text-end" id="cancella">RICOMINCIAMO</button>
+                </div>
+                <div class="col-12 mt-3 text-success fw-bold" >
+                    <h2 class="" id="risultato" style="font-size:calc(0.4em + 1vh)"></h2>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-3">
+                <h3><u>**Funzionamento calcolatrice**</u></h3>
+                <span>Inserisci i numeri nei campi appositi, scegli l'operazione aritmetica.<br>
+                Il totale verrà mostrato in verde sotto al tasto rosso.<br>Premendo il tasto "ricominciamo" sarà possibile
+                effettuare una nuova operazione</span>e
+            </div>
+        </div>
+    </div>        
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
