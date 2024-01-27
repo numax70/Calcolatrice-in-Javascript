@@ -1,2 +1,2 @@
 # CalcolatriceJS
-Mini calcolatrice in JS
+Mini calcolatrice in HTML - CSS - BOOTSTRAP - JAVASCRIPT
